@@ -190,15 +190,15 @@ var adminId = "{$admin_id}";
 </head>
 <body>
 <div id="header-div">
-  <div id="logo-div" style="bgcolor:#000000;"><img src="images/ecshop_logo.gif" alt="ECSHOP - power for e-commerce" />
+  <!--<div id="logo-div" style="bgcolor:#000000;">&lt;!&ndash;<img src="images/ecshop_logo.gif" alt="ECSHOP - power for e-commerce" />&ndash;&gt;
     {if $http_host=='localhost' or !$single_url}
     <span class="noauthorize-icon"><a href="javascript:;"></a></span>
-    <span class="noauthorize"><a href="javascript:;">[未授权用户]</a></span>
+    <span class="noauthorize"><a href="javascript:;">&lt;!&ndash;[未授权用户]&ndash;&gt;</a></span>
     {else}
     <span class="{if $authorization}authorize{else}noauthorize{/if}-icon"><a href="{$single_url}" target="blank"></a></span>
     <span class="{if $authorization}authorize{else}noauthorize{/if}"><a href="{$single_url}" target="_blank">{if $authorization}[{$authorize_name}]{else}[未授权用户]{/if}</a></span>
     {/if}
-  </div>
+  </div>-->
   <div id="license-div" style="bgcolor:#000000;"></div>
   <div id="submenu-div">
     <ul>
@@ -426,13 +426,13 @@ var adminId = "{$admin_id}";
     <li><a href="{$key}" target="main-frame">{$item}</a></li>
     {/foreach}
     <!--授权按钮-->
-    {if $yunqi_login!=1}
+    <!--{if $yunqi_login!=1}
       <li class="btn-bind"><span href="javascript:void(0);" onclick="yunqiLogin();"></span></li>
     {else}
       {if $certi.use_yunqi_authority!=1}
-      <!--去认证-->
+      &lt;!&ndash;去认证&ndash;&gt;
         {if !$certi.certificate_id}<li class="btn-bind"><a href="javascript:void(0);" id="bindBtn"></a></li>
-        <!--去授权-->
+        &lt;!&ndash;去授权&ndash;&gt;
         {else}
           <li class="btn-bind"><a href="{$authority_url}" target="_blank"></a></li>
         {/if}
@@ -440,7 +440,7 @@ var adminId = "{$admin_id}";
       {else}
         <li class="btn-bind"><a href="{$authority_url}" target="_blank"></a></li>
       {/if}
-    {/if}
+    {/if}-->
     <!--授权按钮-->
   </ul>
   <br class="clear" />

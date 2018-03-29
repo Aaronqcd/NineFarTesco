@@ -18,7 +18,7 @@ if (!defined('IN_ECS'))
     die('Hacking attempt');
 }
 
-define('APPNAME', 'ECSHOP');
+define('APPNAME', 'NineFarTesco');
 define('VERSION', 'v3.6.0');
 define('RELEASE', '20161031');
 
